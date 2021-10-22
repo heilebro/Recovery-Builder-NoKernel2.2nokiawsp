@@ -19,7 +19,7 @@ env:
   DEVICE: WSP_sprout
   DT_LINK: https://github.com/SmallPP420/finally-building-twrp-for-my-device-
   DT_PATH: device/hmd/WSP_sprout
-  TARGET: recoveryimage
+  TARGET: bootimage
   TZ: Asia/Kolkata
 
 jobs:
