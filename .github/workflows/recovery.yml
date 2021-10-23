@@ -19,7 +19,7 @@ env:
   DEVICE: fajita
   DT_LINK: https://github.com/SmallPP420/android_device_oneplus_fajita_TWRP
   DT_PATH: device/oneplus/fajita
-  TARGET: bootimage
+  TARGET: adbd recoveryimage
   TZ: Asia/Kolkata
 
 jobs:
