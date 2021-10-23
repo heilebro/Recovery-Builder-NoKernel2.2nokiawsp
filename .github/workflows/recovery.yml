@@ -16,9 +16,9 @@ on:
 env:
   MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
   MANIFEST_BRANCH: fox_9.0
-  DEVICE: WSP_sprout
-  DT_LINK: https://github.com/SmallPP420/finally-building-twrp-for-my-device-
-  DT_PATH: device/hmd/WSP_sprout
+  DEVICE: fajita
+  DT_LINK: https://github.com/SmallPP420/android_device_oneplus_fajita_TWRP
+  DT_PATH: device/oneplus/fajita
   TARGET: bootimage
   TZ: Asia/Kolkata
 
