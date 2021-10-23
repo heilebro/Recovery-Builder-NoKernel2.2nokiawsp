@@ -14,8 +14,8 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
-  MANIFEST_BRANCH: fox_9.0
+  MANIFEST: https://github.com/SmallPP420/solid-umbrella
+  MANIFEST_BRANCH: main
   DEVICE: fajita
   DT_LINK: https://github.com/SmallPP420/android_device_oneplus_fajita_TWRP
   DT_PATH: device/oneplus/fajita
