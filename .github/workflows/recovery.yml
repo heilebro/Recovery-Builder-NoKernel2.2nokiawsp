@@ -17,7 +17,7 @@ env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
   MANIFEST_BRANCH: twrp-11
   DEVICE: Wasp
-  DT_LINK: https://github.com/SmallPP420/Wasp-TWRP-Tree-A11-AOSP-
+  DT_LINK: https://github.com/SmallPP420/A11-Tests
   DT_PATH: device/nokia/Wasp
   TARGET: recoveryimage
   TZ: Asia/Kolkata
