@@ -14,8 +14,8 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
-  MANIFEST_BRANCH: twrp-9.0
+  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
+  MANIFEST_BRANCH: fox_9.0
   DEVICE: Wasp
   DT_LINK: https://github.com/SmallPP420/FixedTree
   DT_PATH: device/nokia/Wasp
