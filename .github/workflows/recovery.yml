@@ -14,12 +14,12 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
-  MANIFEST_BRANCH: fox_9.0
+  MANIFEST: repo init -u git://github.com/SHRP/platform_manifest_twrp_omni.git
+  MANIFEST_BRANCH: v3_9.0
   DEVICE: Wasp
   DT_LINK: https://github.com/SmallPP420/FixedTree
   DT_PATH: device/nokia/Wasp
-  DT_BRANCH: ofox-9.0
+  DT_BRANCH: shrp-9.0
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
@@ -53,7 +53,6 @@ jobs:
              repo init -u $MANIFEST -b $MANIFEST_BRANCH --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
              repo sync -j4
              git clone $DT_LINK -b $DT_BRANCH --depth=1 --single-branch $DT_PATH
-             git clone https://gitlab.com/OrangeFox/misc/theme.git bootable/recovery/gui/theme
 
        - name: Build
          run: |
