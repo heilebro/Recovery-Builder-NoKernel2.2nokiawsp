@@ -14,12 +14,12 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
-  MANIFEST_BRANCH: fox_9.0
+  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+  MANIFEST_BRANCH: twrp-11
   DEVICE: Wasp
-  DT_LINK: https://github.com/SmallPP420/FixedTree
+  DT_LINK: https://github.com/SmallPP420/A11-Tests
   DT_PATH: device/nokia/Wasp
-  DT_BRANCH: ofox-9.0
+  DT_BRANCH: main
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
