@@ -20,7 +20,7 @@ env:
   DT_LINK: https://github.com/SmallPP420/A11-Tests
   DT_PATH: device/nokia/Wasp
   DT_BRANCH: main
-  TARGET: recoveryimage
+  TARGET: bootimage
   TZ: Asia/Kolkata
 
 jobs:
