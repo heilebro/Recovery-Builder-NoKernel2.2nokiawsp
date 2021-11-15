@@ -14,13 +14,13 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
-  MANIFEST_BRANCH: twrp-11
-  DEVICE: Wasp
-  DT_LINK: https://github.com/SmallPP420/A11-Tests
-  DT_PATH: device/nokia/Wasp
+  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
+  MANIFEST_BRANCH: twrp-9.0
+  DEVICE: WSP_sprout
+  DT_LINK: https://github.com/SmallPP420/new-test-9
+  DT_PATH: device/hmd/WSP_sprout
   DT_BRANCH: main
-  TARGET: bootimage
+  TARGET: recoveryimage
   TZ: Asia/Kolkata
 
 jobs:
@@ -57,8 +57,7 @@ jobs:
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh && lunch twrp_$DEVICE-eng && export ALLOW_MISSING_DEPENDENCIES=true
-              mka $TARGET -j1
+              . build/envsetup.sh && lunch twrp_$DEVICE-eng && export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
        - uses: actions/upload-artifact@v2
          with:
