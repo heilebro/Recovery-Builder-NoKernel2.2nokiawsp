@@ -19,7 +19,7 @@ env:
   DEVICE: WSP_sprout
   DT_LINK: https://github.com/SmallPP420/ok-one-more-fix
   DT_PATH: device/hmd/WSP_sprout
-  DT_BRANCH: OFOX-9.0
+  DT_BRANCH: main
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
