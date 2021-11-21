@@ -59,7 +59,10 @@ jobs:
        - name: Build
          run: |
               cd work
-              mkdir out/target/product/avicii
+              mkdir -p out
+              mkdir -p out/target
+              mkdir -p out/target/product
+              mkdir -p out/target/product/avicii
               cp device/oneplus/avicii/prebuilt/dtb.img out/target/product/avicii
               cp device/oneplus/avicii/prebuilt/dtbo.img out/target/product/avicii
               cp device/oneplus/avicii/prebuilt/Image.gz out/target/product/avicii
