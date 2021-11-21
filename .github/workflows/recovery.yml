@@ -14,13 +14,13 @@ on:
     types: [started]
 
 env:
-  MANIFEST: https://gitlab.com/OrangeFox/Manifest.git
-  MANIFEST_BRANCH: fox_9.0
-  EXTRA_SYNC_CMD: git clone https://gitlab.com/OrangeFox/misc/theme.git bootable/recovery/gui/theme
+  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git
+  MANIFEST_BRANCH: android-10.0
+  EXTRA_SYNC_CMD: echo "hello"
   DEVICE: WSP_sprout
-  DT_LINK: https://github.com/SmallPP420/new-test-9
-  DT_PATH: device/hmd/WSP_sprout
-  DT_BRANCH: OFOX-9.0
+  DT_LINK: https://github.com/SmallPP420/device_oneplus_avicii
+  DT_PATH: device/oneplus/avicii
+  DT_BRANCH: pbt1
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
