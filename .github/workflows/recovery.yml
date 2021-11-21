@@ -59,6 +59,10 @@ jobs:
        - name: Build
          run: |
               cd work
+              mkdir out/target/product/avicii
+              cp device/oneplus/avicii/prebuilt/dtb.img out/target/product/avicii
+              cp device/oneplus/avicii/prebuilt/dtbo.img out/target/product/avicii
+              cp device/oneplus/avicii/prebuilt/Image.gz out/target/product/avicii
               . build/envsetup.sh && lunch omni_$DEVICE-eng && export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
        - uses: actions/upload-artifact@v2
