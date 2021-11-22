@@ -18,9 +18,9 @@ env:
   MANIFEST_BRANCH: twrp-10.0-deprecated
   EXTRA_SYNC_CMD: echo "hello"
   DEVICE: WSP_sprout
-  DT_LINK: https://github.com/SmallPP420/new-test-9
+  DT_LINK: https://github.com/SmallPP420/test
   DT_PATH: device/hmd/WSP_sprout
-  DT_BRANCH: TEST-10-KEEPOUT
+  DT_BRANCH: main
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
