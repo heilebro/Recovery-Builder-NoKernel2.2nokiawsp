@@ -14,13 +14,13 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git
-  MANIFEST_BRANCH: android-10.0
+  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
+  MANIFEST_BRANCH: twrp-10.0-deprecated
   EXTRA_SYNC_CMD: echo "hello"
-  DEVICE: avicii
+  DEVICE: WSP_sprout
   DT_LINK: https://github.com/SmallPP420/device_oneplus_avicii
-  DT_PATH: device/oneplus/avicii
-  DT_BRANCH: pbt1
+  DT_PATH: device/hmd/WSP_sprout
+  DT_BRANCH: TEST-10-KEEPOUT
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
