@@ -18,7 +18,7 @@ env:
   MANIFEST_BRANCH: twrp-10.0-deprecated
   EXTRA_SYNC_CMD: echo "hello"
   DEVICE: WSP_sprout
-  DT_LINK: https://github.com/SmallPP420/device_oneplus_avicii
+  DT_LINK: https://github.com/SmallPP420/new-test-9
   DT_PATH: device/hmd/WSP_sprout
   DT_BRANCH: TEST-10-KEEPOUT
   TARGET: recoveryimage
