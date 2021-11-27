@@ -15,12 +15,12 @@ on:
 
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
-  MANIFEST_BRANCH: twrp-10.0-deprecated
+  MANIFEST_BRANCH: twrp-9.0
   EXTRA_SYNC_CMD: echo "hello"
   DEVICE: WSP_sprout
-  DT_LINK: https://github.com/SmallPP420/test
+  DT_LINK: https://github.com/SmallPP420/nokia-2.3_twrp_a9
   DT_PATH: device/hmd/WSP_sprout
-  DT_BRANCH: main
+  DT_BRANCH: android_9
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
@@ -53,17 +53,12 @@ jobs:
              cd work
              repo init -u $MANIFEST -b $MANIFEST_BRANCH --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
              repo sync -j4
-             git clone $DT_LINK -b $DT_BRANCH --depth=1 --single-branch $DT_PATH
+             git clone $DT_LINK -b $DT_BRANCH --depth=1 --single-branch
              $EXTRA_SYNC_CMD
 
        - name: Build
          run: |
               cd work
-              mkdir -p out
-              mkdir -p out/target
-              mkdir -p out/target/product
-              mkdir -p out/target/product/WSP_sprout
-              cp device/hmd/WSP_sprout/system.prop out/target/product/WSP_sprout
               . build/envsetup.sh && lunch omni_$DEVICE-eng && export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
        - uses: actions/upload-artifact@v2
