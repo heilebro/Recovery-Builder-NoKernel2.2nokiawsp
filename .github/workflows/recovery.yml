@@ -53,7 +53,7 @@ jobs:
              cd work
              repo init -u $MANIFEST -b $MANIFEST_BRANCH --depth=1 --groups=all,-notdefault,-device,-darwin,-x86,-mips
              repo sync -j4
-             git clone $DT_LINK -b $DT_BRANCH device/ --depth=1 --single-branch
+             git clone $DT_LINK -b $DT_BRANCH --depth=1 --single-branch device/
              $EXTRA_SYNC_CMD
 
        - name: Build
