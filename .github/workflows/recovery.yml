@@ -15,13 +15,13 @@ on:
 
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
-  MANIFEST_BRANCH: twrp-10.0-deprecated
+  MANIFEST_BRANCH: twrp-9.0
   EXTRA_SYNC_CMD: echo "hello"
   DEVICE: WSP_sprout
-  DT_LINK: https://github.com/SmallPP420/wsp_sprout_10-twrp
+  DT_LINK: https://github.com/SmallPP420/test9ab
   DT_PATH: device/hmd/WSP_sprout
   DT_BRANCH: main
-  TARGET: recoveryimage
+  TARGET: bootimage
   TZ: Asia/Kolkata
 
 jobs:
