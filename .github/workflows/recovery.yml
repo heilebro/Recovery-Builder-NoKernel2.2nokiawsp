@@ -14,14 +14,14 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
-  MANIFEST_BRANCH: twrp-9.0
+  MANIFEST: git://github.com/PitchBlackRecoveryProject/manifest_pb.git
+  MANIFEST_BRANCH: android-9.0
   EXTRA_SYNC_CMD: echo "hello"
   DEVICE: WSP_sprout
   DT_LINK: https://github.com/SmallPP420/test9ab
   DT_PATH: device/hmd/WSP_sprout
-  DT_BRANCH: testV2Fstab
-  TARGET: adbd recoveryimage
+  DT_BRANCH: pbrp
+  TARGET: recoveryimage
   TZ: Asia/Kolkata
 
 jobs:
