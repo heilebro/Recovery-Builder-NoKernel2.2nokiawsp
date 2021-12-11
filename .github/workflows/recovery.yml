@@ -21,7 +21,7 @@ env:
   DT_LINK: https://github.com/SmallPP420/test9ab
   DT_PATH: device/hmd/WSP_sprout
   DT_BRANCH: pbrp
-  TARGET: recoveryimage
+  TARGET: adbd recoveryimage
   TZ: Asia/Kolkata
 
 jobs:
