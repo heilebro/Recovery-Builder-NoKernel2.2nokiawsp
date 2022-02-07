@@ -15,7 +15,7 @@ on:
 
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
-  MANIFEST_BRANCH: twrp-10.0
+  MANIFEST_BRANCH: twrp-10.0-deprecated
   EXTRA_SYNC_CMD: echo "hello"
   DEVICE: Z5157V
   DT_LINK: https://github.com/SmallPP420/TWRP_Device_ZTE_Z5157V
