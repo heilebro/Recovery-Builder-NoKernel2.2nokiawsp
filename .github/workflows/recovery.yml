@@ -16,7 +16,7 @@ on:
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
   MANIFEST_BRANCH: twrp-11
-  EXTRA_SYNC_CMD: rn -rf bootable/recovery && git clone https://github.com/TeamWin/android_bootable_recovery -b android-12
+  EXTRA_SYNC_CMD: rm -rf bootable/recovery && git clone https://github.com/TeamWin/android_bootable_recovery -b android-12
   DEVICE: vayu
   DT_LINK: https://github.com/TeamWin/android_device_xiaomi_vayu
   DT_PATH: device/xiaomi/vayu
