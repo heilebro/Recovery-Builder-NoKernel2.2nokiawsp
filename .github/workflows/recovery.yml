@@ -14,12 +14,12 @@ on:
     types: [started]
 
 env:
-  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git
-  MANIFEST_BRANCH: twrp-10.0-deprecated
-  EXTRA_SYNC_CMD: echo "hello"
-  DEVICE: Z5157V
-  DT_LINK: https://github.com/SmallPP420/TWRP_Device_ZTE_Z5157V
-  DT_PATH: device/zte/Z5157V
+  MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
+  MANIFEST_BRANCH: twrp-11
+  EXTRA_SYNC_CMD: rn -rf bootable/recovery && git clone https://github.com/TeamWin/android_bootable_recovery -b android-12
+  DEVICE: vayu
+  DT_LINK: https://github.com/TeamWin/android_device_xiaomi_vayu
+  DT_PATH: device/xiaomi/vayu
   DT_BRANCH: main
   TARGET: recoveryimage
   TZ: Asia/Kolkata
