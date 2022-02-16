@@ -20,7 +20,7 @@ env:
   DEVICE: vayu
   DT_LINK: https://github.com/TeamWin/android_device_xiaomi_vayu
   DT_PATH: device/xiaomi/vayu
-  DT_BRANCH: main
+  DT_BRANCH: android-11
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
