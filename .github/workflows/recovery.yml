@@ -16,7 +16,7 @@ on:
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git
   MANIFEST_BRANCH: twrp-11
-  EXTRA_SYNC_CMD: sudo rm -rf "/home/runner/work/Recovery-Builder-NoKernel/Recovery-Builder-NoKernel/work/bootable/recovery" && git clone https://github.com/TeamWin/android_bootable_recovery -b android-12
+  EXTRA_SYNC_CMD: sudo rm -rf "/home/runner/work/Recovery-Builder-NoKernel/Recovery-Builder-NoKernel/work/bootable/recovery"
   DEVICE: vayu
   DT_LINK: https://github.com/TeamWin/android_device_xiaomi_vayu
   DT_PATH: device/xiaomi/vayu
@@ -55,6 +55,7 @@ jobs:
              repo sync -j4
              git clone $DT_LINK -b $DT_BRANCH --depth=1 --single-branch $DT_PATH
              $EXTRA_SYNC_CMD
+             git clone https://github.com/TeamWin/android_bootable_recovery -b android-12
 
        - name: Build
          run: |
